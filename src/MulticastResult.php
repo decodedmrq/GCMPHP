@@ -20,9 +20,9 @@ class MulticastResult
     private $retryMulticastIds;
     private $invalidRegistrationIds;
 
-    public function __construct($response = null, $registrationIds = null)
+    public function __construct($response = null)
     {
-        if (is_null($response) && is_null($registrationIds)) {
+        if (is_null($response)) {
             return $this;
         }
         $response = json_decode($response);

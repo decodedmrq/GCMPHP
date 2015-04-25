@@ -162,7 +162,7 @@ class Sender
             throw new \Exception("Error response {$result['response']}");
         }
 
-        return new MulticastResult($response, $registrationIds);
+        return new MulticastResult($response);
     }
 
     /**
